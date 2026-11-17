@@ -18,7 +18,7 @@ function Login({ voltarHome, entrarSistema }) {
     try {
       setCarregando(true);
 
-      const resposta = await fetch("http://localhost:8080/auth/login", {
+      const resposta = await fetch("https://x-academia-sko8.onrender.com/auth/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
